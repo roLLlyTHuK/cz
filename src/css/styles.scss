@@ -1,0 +1,54 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./header.scss');
+@import url('./hero.scss');
+@import url('./about.scss');
+@import url('./benefits.scss');
+@import url('./courses.scss');
+@import url('./contacts.scss');
+@import url('./footer.scss');
+
+:root {
+  box-sizing: border-box;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  --dark-primary-color: #0288d1;
+  --dark-primary-bg-color: rgba(2, 136, 209, 0.4);
+  --light-primary-color: #b3e5fc;
+  --primary-color: #03a9f4;
+  --light-icons-color: #fff;
+  --accent-color: #ffc107;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --divider-color: #bdbdbd;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: var(--light-icons-color);
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
