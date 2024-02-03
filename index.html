@@ -5,29 +5,36 @@
     <link rel="icon" type="image/svg+xml" href="/cz/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charivne zerniatko</title>
+
+    <script
+      src="https://kit.fontawesome.com/fdbe749710.js"
+      crossorigin="anonymous"
+    ></script>
     
     <script type="module" crossorigin src="/cz/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/cz/assets/index-87157193.css">
+    <link rel="stylesheet" href="/cz/assets/index-af3b8a7b.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav container">
-    <a href="./" class="nav__logo">Чарівне зернятко</a>
-    <ul class="nav__list">
-      <li class="nav__list__item">
-        <a href="#about">Про нас</a>
-      </li>
-      <li class="nav__list__item">
-        <a href="#benefits">Наші переваги</a>
-      </li>
-      <li class="nav__list__item">
-        <a href="#courses">Заняття</a>
-      </li>
-      <li class="nav__list__item">
-        <a href="#contacts">Контакти</a>
-      </li>
-    </ul>
-  </nav>
+    <header id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="./" class="logo">Чарівне зернятко</a>
+      <ul class="nav__list">
+        <li class="nav__list__item">
+          <a href="#about">Про нас</a>
+        </li>
+        <li class="nav__list__item">
+          <a href="#benefits">Наші переваги</a>
+        </li>
+        <li class="nav__list__item">
+          <a href="#courses">Заняття</a>
+        </li>
+        <li class="nav__list__item">
+          <a href="#contacts">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
     <section id="hero">
@@ -42,7 +49,11 @@
         velit veniam nam blanditiis ratione, eaque tempore impedit? Dolore quia
         pariatur natus.
       </p>
-      <a href="#contacts" class="hero__content__link">Записатися на заняття</a>
+      <div class="link-wrapper">
+        <span class="inner-wrapper wrapper-15">
+          <a href="#contacts" class="link hover-15">Записатися на заняття</a>
+        </span>
+      </div>
     </div>
     <div class="hero__images">
       <div class="hero__images__swapper">
@@ -90,13 +101,7 @@
         </div>
 
         <div class="benefits__list__item__text-wrapper">
-          <h3>title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            doloremque non saepe libero qui nobis cum cumque nulla
-            necessitatibus, quaerat eos labore nisi quae aspernatur harum vitae
-            obcaecati beatae dolore.
-          </p>
+          <h4>Частний будинок з огороженою територією</h4>
         </div>
       </li>
       <li class="benefits__list__item">
@@ -105,13 +110,7 @@
         </div>
 
         <div class="benefits__list__item__text-wrapper">
-          <h3>title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            doloremque non saepe libero qui nobis cum cumque nulla
-            necessitatibus, quaerat eos labore nisi quae aspernatur harum vitae
-            obcaecati beatae dolore.
-          </p>
+          <h4>Індивідуальний підхід до дитини</h4>
         </div>
       </li>
       <li class="benefits__list__item">
@@ -120,13 +119,7 @@
         </div>
 
         <div class="benefits__list__item__text-wrapper">
-          <h3>title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            doloremque non saepe libero qui nobis cum cumque nulla
-            necessitatibus, quaerat eos labore nisi quae aspernatur harum vitae
-            obcaecati beatae dolore.
-          </p>
+          <h4>Повноцінна підготовка до школи</h4>
         </div>
       </li>
       <li class="benefits__list__item">
@@ -135,13 +128,7 @@
         </div>
 
         <div class="benefits__list__item__text-wrapper">
-          <h3>title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            doloremque non saepe libero qui nobis cum cumque nulla
-            necessitatibus, quaerat eos labore nisi quae aspernatur harum vitae
-            obcaecati beatae dolore.
-          </p>
+          <h4>Відпочинок на свіжому повітрі</h4>
         </div>
       </li>
       <li class="benefits__list__item">
@@ -150,13 +137,7 @@
         </div>
 
         <div class="benefits__list__item__text-wrapper">
-          <h3>title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            doloremque non saepe libero qui nobis cum cumque nulla
-            necessitatibus, quaerat eos labore nisi quae aspernatur harum vitae
-            obcaecati beatae dolore.
-          </p>
+          <h4>Різномантіні мистецькі заняття</h4>
         </div>
       </li>
       <li class="benefits__list__item">
@@ -165,13 +146,7 @@
         </div>
 
         <div class="benefits__list__item__text-wrapper">
-          <h3>title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            doloremque non saepe libero qui nobis cum cumque nulla
-            necessitatibus, quaerat eos labore nisi quae aspernatur harum vitae
-            obcaecati beatae dolore.
-          </p>
+          <h4>Збалансоване харчування</h4>
         </div>
       </li>
     </ul>
@@ -181,84 +156,221 @@
     <section id="courses">
   <div class="courses container">
     <h2 class="courses__title">Заняття</h2>
-    <ul class="courses__list">
-      <li class="courses__list__item">
-        <div class="courses__list__item__img-wrapper">
-          <img src="/cz/assets/school2-2fd11823.jpg" alt="" />
-        </div>
-        <div class="courses__list__item__text-wrapper">
-          <h3>Підготовка до школи</h3>
+    <div class="courses__slider">
+      <div
+        class="courses__slider__slide"
+        style="background-image: url(../img/courses/learn.jpg)"
+      >
+        <div class="courses__slider__slide__content">
+          <h2>
+            Підготовка <br />
+            до <br />школи
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            reprehenderit distinctio optio nulla eum quod. Magnam eos, harum
-            natus debitis, cumque, deserunt saepe modi ea maiores dicta
-            consequatur sequi laboriosam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+            quisquam perspiciatis, tempora voluptate nihil magnam expedita
+            suscipit aliquam fugiat accusamus dicta iusto deleniti modi officiis
+            exercitationem provident dolore minima ab quaerat minus illo?
+            Molestias ipsam adipisci maiores doloremque id architecto beatae
+            temporibus labore assumenda alias, dolorum sunt delectus laboriosam.
+            Esse?
           </p>
         </div>
-      </li>
-      <li class="courses__list__item">
-        <div class="courses__list__item__img-wrapper">
-          <img src="/cz/assets/clay-74864bce.jpg" alt="" />
-        </div>
-        <div class="courses__list__item__text-wrapper">
-          <h3>Творчість</h3>
+      </div>
+      <div
+        class="courses__slider__slide"
+        style="background-image: url(../img/courses/day.jpg)"
+      >
+        <div class="courses__slider__slide__content">
+          <h2>
+            група <br />
+            повного <br />
+            дня
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            reprehenderit distinctio optio nulla eum quod. Magnam eos, harum
-            natus debitis, cumque, deserunt saepe modi ea maiores dicta
-            consequatur sequi laboriosam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+            quisquam perspiciatis, tempora voluptate nihil magnam expedita
+            suscipit aliquam fugiat accusamus dicta iusto deleniti modi officiis
+            exercitationem provident dolore minima ab quaerat minus illo?
+            Molestias ipsam adipisci maiores doloremque id architecto beatae
+            temporibus labore assumenda alias, dolorum sunt delectus laboriosam.
+            Esse?
           </p>
         </div>
-      </li>
-      <li class="courses__list__item">
-        <div class="courses__list__item__img-wrapper">
-          <img src="./img/courses/courses1.jpg" alt="" />
-        </div>
-        <div class="courses__list__item__text-wrapper">
-          <h3>Хореографія</h3>
+      </div>
+      <div
+        class="courses__slider__slide"
+        style="background-image: url(../img/courses/art.jpg)"
+      >
+        <div class="courses__slider__slide__content">
+          <h2>
+            Творчі <br />
+            курси
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            reprehenderit distinctio optio nulla eum quod. Magnam eos, harum
-            natus debitis, cumque, deserunt saepe modi ea maiores dicta
-            consequatur sequi laboriosam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+            quisquam perspiciatis, tempora voluptate nihil magnam expedita
+            suscipit aliquam fugiat accusamus dicta iusto deleniti modi officiis
+            exercitationem provident dolore minima ab quaerat minus illo?
+            Molestias ipsam adipisci maiores doloremque id architecto beatae
+            temporibus labore assumenda alias, dolorum sunt delectus laboriosam.
+            Esse?
           </p>
         </div>
-      </li>
-      <li class="courses__list__item">
-        <div class="courses__list__item__img-wrapper">
-          <img src="./img/courses/courses1.jpg" alt="" />
-        </div>
-        <div class="courses__list__item__text-wrapper">
-          <h3>Вокал</h3>
+      </div>
+      <div
+        class="courses__slider__slide"
+        style="background-image: url(../img/courses/actor.jpg)"
+      >
+        <div class="courses__slider__slide__content">
+          <h2>Акторська<br />майстерність</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            reprehenderit distinctio optio nulla eum quod. Magnam eos, harum
-            natus debitis, cumque, deserunt saepe modi ea maiores dicta
-            consequatur sequi laboriosam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+            quisquam perspiciatis, tempora voluptate nihil magnam expedita
+            suscipit aliquam fugiat accusamus dicta iusto deleniti modi officiis
+            exercitationem provident dolore minima ab quaerat minus illo?
+            Molestias ipsam adipisci maiores doloremque id architecto beatae
+            temporibus labore assumenda alias, dolorum sunt delectus laboriosam.
+            Esse?
           </p>
         </div>
-      </li>
-      <li class="courses__list__item">
-        <div class="courses__list__item__img-wrapper">
-          <img src="/cz/assets/fullday-af32df69.jpg" alt="" />
-        </div>
-        <div class="courses__list__item__text-wrapper">
-          <h3>Група повного дня</h3>
+      </div>
+
+      <div
+        class="courses__slider__slide"
+        style="background-image: url(../img/courses/sing.jpg)"
+      >
+        <div class="courses__slider__slide__content">
+          <h2>Вокал</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            reprehenderit distinctio optio nulla eum quod. Magnam eos, harum
-            natus debitis, cumque, deserunt saepe modi ea maiores dicta
-            consequatur sequi laboriosam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+            quisquam perspiciatis, tempora voluptate nihil magnam expedita
+            suscipit aliquam fugiat accusamus dicta iusto deleniti modi officiis
+            exercitationem provident dolore minima ab quaerat minus illo?
+            Molestias ipsam adipisci maiores doloremque id architecto beatae
+            temporibus labore assumenda alias, dolorum sunt delectus laboriosam.
+            Esse?
           </p>
         </div>
-      </li>
-    </ul>
+      </div>
+      <div
+        class="courses__slider__slide"
+        style="background-image: url(../img/courses/dance.jpg)"
+      >
+        <div class="courses__slider__slide__content">
+          <h2>Хореографія</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+            quisquam perspiciatis, tempora voluptate nihil magnam expedita
+            suscipit aliquam fugiat accusamus dicta iusto deleniti modi officiis
+            exercitationem provident dolore minima ab quaerat minus illo?
+            Molestias ipsam adipisci maiores doloremque id architecto beatae
+            temporibus labore assumenda alias, dolorum sunt delectus laboriosam.
+            Esse?
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-    <section id="contacts">Contacts page</section>
+    <section id="contacts">
+  <div class="contacts container">
+    <h2 class="contacts__title">Контакти</h2>
+    <div class="contacts__wrapper">
+      <div class="contacts__wrapper__address">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2547.476295697542!2d30.481220277024434!3d50.320364596721234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c7f70dcf25c7%3A0xe0b1911f8b946a9b!2z0LLRg9C70LjRhtGPINCd0LXQt9Cw0LvQtdC20L3QvtGB0YLRliwgMTAsINCl0L7RgtGW0LIsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgxNzE!5e0!3m2!1suk!2sua!4v1706699941223!5m2!1suk!2sua"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="contacts__wrapper__form-box">
+        <span class="title">Leave a Comment</span>
+        <form class="form">
+          <div class="group">
+            <input placeholder="" type="text" required="" />
+            <label for="name">Name</label>
+          </div>
+          <div class="group">
+            <input
+              placeholder=""
+              type="email"
+              id="email"
+              name="email"
+              required=""
+            />
+            <label for="email">Email</label>
+          </div>
+          <div class="group">
+            <textarea
+              placeholder=""
+              id="comment"
+              name="comment"
+              rows="5"
+              required=""
+            ></textarea>
+            <label for="comment">Comment</label>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer>Footer</footer>
+    <footer>
+  <div class="footer container">
+    <div class="footer__up">
+      <div class="footer__up__text-container">
+        <h3>Адреса:</h3>
+        <p>
+          Київська обл., <br />
+          с.Хотів, <br />
+          вул.Незалежності 10
+        </p>
+        <h3>Зв'язок з нами:</h3>
+        <p>
+          тел.:+380 (97) 123 45 67 <br />
+          email: 5Tg2N@example.com
+        </p>
+      </div>
+      <div class="footer__up__social__container">
+        <h3>Ми в соцмережах:</h3>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-viber"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      <p>
+        Дитячий центр розвитку "ЧАРІВНЕ ЗЕРНЯТКО" &copy; 2024. Всі права
+        захищені.
+      </p>
+    </div>
+  </div>
+</footer>
 
 
     
