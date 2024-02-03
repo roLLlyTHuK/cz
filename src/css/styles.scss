@@ -90,7 +90,7 @@ p {
 }
 .container {
   width: 1440px;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 20px;
 }
 
@@ -110,8 +110,8 @@ p {
 
 @media only screen and (max-width: 425px) {
   .container {
-    width: 100%;
-    padding: 5px;
+    width: 320px;
+    padding: 10px;
   }
 }
 

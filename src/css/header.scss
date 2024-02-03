@@ -116,3 +116,15 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  #header {
+    .container {
+      .nav {
+        &__list {
+          display: none;
+        }
+      }
+    }
+  }
+}
