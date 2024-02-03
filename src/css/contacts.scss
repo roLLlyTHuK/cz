@@ -1,0 +1,124 @@
+#contacts {
+  background-color: var(--dark-primary-color);
+}
+.contacts {
+  width: 100%;
+
+  &__wrapper {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+
+    &__address {
+      background-color: var(--light-icons-color);
+      border-radius: 10px;
+      padding: 20px;
+      width: 600px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      border: 1.5px solid var(--dark-primary-color);
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    }
+
+    &__form-box {
+      background-color: var(--light-icons-color);
+      border-radius: 10px;
+      padding: 20px;
+      width: 600px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      border: 1.5px solid var(--dark-primary-color);
+
+      .title {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .group {
+          position: relative;
+
+          label {
+            font-size: 1rem;
+            color: rgb(99, 102, 102);
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            background-color: var(--light-icons-color);
+            transition: all 0.3s ease;
+          }
+
+          input,
+          textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            outline: 0;
+            width: 100%;
+            background-color: transparent;
+            font-size: 1.2rem;
+          }
+
+          input:placeholder-shown + label,
+          textarea:placeholder-shown + label {
+            top: 10px;
+            background-color: transparent;
+          }
+
+          input:focus,
+          textarea:focus {
+            border-color: var(--dark-primary-color);
+          }
+
+          input:focus + label,
+          textarea:focus + label {
+            top: -10px;
+            left: 10px;
+            background-color: var(--light-icons-color);
+            color: var(--dark-primary-color);
+            font-weight: 600;
+            font-size: 1rem;
+          }
+
+          textarea {
+            resize: none;
+            height: 100px;
+          }
+        }
+
+        button {
+          background-color: var(--dark-primary-color);
+          color: var(--light-icons-color);
+          border: none;
+          border-radius: 5px;
+          padding: 10px;
+          font-size: 1.2rem;
+          margin-top: 20px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        button:hover {
+          background-color: var(--dark-primary-color);
+        }
+      }
+    }
+  }
+}
